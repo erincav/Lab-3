@@ -9,6 +9,9 @@
 
 @media only screen and (max-width: 768px) {
   /*For iPad*/
+  .home-banner{
+    height:90%;
+}
   .banner, .about-banner, .contact-banner, .resume-banner, .portfolio-banner{
     background-color:blue;
     height:60%;

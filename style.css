@@ -3,6 +3,7 @@
   margin:0 auto;
 }
 
+
 /*Navigation Bar*/
 nav{
 background-color:white;
@@ -56,7 +57,14 @@ a li:hover{
 .home-banner{
   background-image: url('images/banners/photographs.jpg');
   background-size:cover;
+  height:600px;
+  width:100%;
+  position:fixed;
+  top:50px;
+  z-index:-500;
+  max-height: 80%;
 }
+
 
 .banner{
   height:600px;
@@ -80,6 +88,14 @@ body{
   padding:0;
 }
 
+
+.form-style{
+  font-family: helvetica, comic sans-serif , serif;
+  background-color:white;
+  padding:5%;
+}
+
+
 .grid-container{
   width:100%;
   margin:0 auto;
@@ -95,8 +111,8 @@ body{
   text-align: center;
   margin:0 auto;
   padding:0 auto;
-  height:600px;
-  overflow:auto;
+  overflow: visible;
+  height: auto;
 }
 
 
@@ -155,26 +171,30 @@ body{
 .contact-banner{
   background-image: url('images/banners/madison.jpg');
   background-size:cover;
+  max-height: 60%;
 }
 
 .resume-banner{
   background-image: url('images/banners/keepcalm.jpeg');
   background-size:cover;
+  max-height: 60%;
 }
 .portfolio-banner{
   background-image: url('images/banners/camera.png');
   background-size:cover;
+  max-height: 60%;
 }
 
 .about-banner{
   background-image: url('images/banners/road.jpg');
   background-size:cover;
+      max-height: 80%;
 }
 
 .contact-container{
   margin:0 auto;
-  background-color:grey;
-  height:600px;
+  background-color:white;
+  height:auto;
   width:100%;
   margin:auto;
   margin-bottom: 0px;
@@ -237,8 +257,8 @@ figure{
 }
 
 
-.row1, .row2, .row3{
-  /*display:block;
+/*.row1, .row2, .row3{
+  display:block;
   padding:5px;
   margin:auto;*/
 }
@@ -277,12 +297,191 @@ background-color:red;
 }
 
 
+/*##########BLOG PAGE #################*/
+.form-container{
+  height:200px;
+  background-color:white;
+}
+.form_title{
+  background-color:black;
+  padding:10%;
+  color:white;
+}
+
+.form_title h1{
+  font-family: 'Kristi', cursive;;
+  font-weight:bold;
+  font-size:250%;
+}
+
+.blog_form{
+  background-color:white;
+}
+
+.form-style{
+  font-family: helvetica, comic sans-serif , serif;
+  background-color:white;
+  padding:5%;
+}
+
+
+
+.blog-grid{
+  background-color:
+
+}
+.blogpost-grid{
+  background-color:white;
+  height:800px;
+}
+
+/*Blog Grid Row 1*/
+.row1{
+  height:auto;
+  width:100%;
+  background-color:white;
+}
+.blog_post{
+  background-color:pink;
+/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0*/
+}
+
+#blog_img{
+  width:45%;
+  height:45%;
+  display:inline-block;
+  /*padding:5% 5% 5% 0%;*/
+  margin:5% 5% 5% 0%;
+  position:relative;
+  float:left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+
+}
+
+h2{
+  font-size:250%;
+  font-family: 'Kristi', cursive;
+  font-weight:bold;
+  color:black;
+}
+h3{
+  font-size:170%;
+  font-family: 'Kristi', cursive;
+  font-weight:bold;
+    color:black;
+}
+
+p{
+  color:black;
+  font-family:helvetica, comic sans-serif , serif;
+}
+
+.im-blog-ex{
+  width:100%;
+  display:block;
+  padding-top:10%;
+}
+
+
+/*Blog Grid Row 2*/
+.row2{
+  height:500px;
+  background-color:black;
+}
+
+.block1{
+  background-color:#1e1f21;
+  overflow:visible;
+  color:white;
+}
+.block2{
+  background-color:white;
+  overflow:visible;
+}
+
+.block3{
+  background-color:#1e1f21;
+  overflow:visible;
+  color:white;
+}
+
+/*Blog Grid Row 3*/
+.row3{
+  height:300px;
+  background-color:white;
+}
+
+/*##########B END BLOG PAGE #################*/
+
+
 
 /*FOOTER*/
 footer{
-  color:white;
-  background-color:#1e1517;
+  /*color:white;
+  background-color:#1e1f21;
   width:100%;
   height:60px;
-  text-align:right;
+  text-align:right*/
+
+  display:flex;
+ height:60px;
+  padding:0 auto;
+  background:#1e1f21;
+  flex-wrap:wrap;
+  margin:auto;
+  background-color:#1e1f21;
+  width:100%;
+}
+
+/*SOCIAL CONTAINER*/
+
+.social-container{
+  display:flex;
+ height:60px;
+  padding:0 auto;
+  background-color:white;
+  flex-wrap:wrap;
+  margin:auto;
+}
+
+.google-plus:hover{
+  background-color:#f43851;
+  border-radius:50%;
+}
+.instagram:hover{
+  background-color:#f43851;
+  border-radius:50%;
+}
+.twitter:hover{
+  background-color:#f43851;
+  border-radius:50%;
+}
+.mail:hover{
+  background-color:#f43851;
+  border-radius:50%;
+}
+
+.google-plus{
+  flex:1;
+  height:60px;
+  flex-wrap:wrap;
+}
+.instagram{
+    flex:1;
+  height:60px;
+  flex-wrap:wrap;
+}
+.twitter{
+     flex:1;
+  height:60px;
+  flex-wrap:wrap;
+}
+.mail{
+     flex:1;
+  height:60px;
+  flex-wrap:wrap;
+}
+.copyright{
+  margin-left: 50%;
+  text:white;
 }
